@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+
+.icon {
+  display: block;
+  background: url('https://cdn-icons-png.flaticon.com/512/317/317348.png') cover cover/contain no-repeat;
+  width: 10px;
+  height: 10px;
+}
+img {
+  width: 25px;
+  height: 25px;
+}
+.container{
+  margin:0 auto;
+  max-width: 800px;
+}
+.AddBar{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.search{
+  border: 1px solid grey;
+  opacity: 50%;
+}

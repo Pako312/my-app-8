@@ -1,0 +1,12 @@
+
+.search{
+    border: 1px solid grey;
+    opacity: 50%;
+    
+
+  }
+.SearchBox{
+    width: 30%;
+    display: block;
+    margin-right: 500px;
+}
