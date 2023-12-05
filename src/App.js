@@ -17,7 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { green, grey } from '@mui/material/colors';
 import { Avatar } from '@mui/material';
-import  styles from './app.module.css';
+import styles from './app.module.css';
 import Button from '@mui/material/Button';
 import EnhancedTable from './components/table/table';
 import Search from './components/search/search';
@@ -166,7 +166,7 @@ export default function PrimarySearchAppBar() {
 
   return (
     <Box sx={{ flexGrow: 1, }}>
-      <AppBar position="static" sx={{ background: '#f4f6f8', boxShadow:'none', color:'grey'}}>
+      <AppBar position="static" sx={{ background: '#f4f6f8', boxShadow: 'none', color: 'grey' }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -188,7 +188,7 @@ export default function PrimarySearchAppBar() {
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>
-         
+
           {/* <Search>
            
             <StyledInputBase
@@ -200,10 +200,10 @@ export default function PrimarySearchAppBar() {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
               <Badge color="error">
-               
-               <img src='https://cdn-icons-png.flaticon.com/512/317/317348.png'></img>
 
-              <i className={styles['icon']}></i>
+                <img src='https://cdn-icons-png.flaticon.com/512/317/317348.png'></img>
+
+                <i className={styles['icon']}></i>
 
                 {/* <MailIcon /> */}
               </Badge>
@@ -256,15 +256,15 @@ export default function PrimarySearchAppBar() {
 
       <div className={styles['container']}>
         <div className={styles['AddBar']}>
-        <Typography sx={{color:'black'}} variant="h5" gutterBottom>
-        Users
-      </Typography>
-      <Button sx={{backgroundColor:'black', color:'white'}} variant="contained">+ New User</Button>
+          <Typography sx={{ color: 'black' }} variant="h5" gutterBottom>
+            Users
+          </Typography>
+          <Button sx={{ backgroundColor: 'black', color: 'white' }} variant="contained">+ New User</Button>
         </div>
 
         <EnhancedTable />
 
-{/* 
+        {/* 
       <Toolbar sx={{backgroundColor:'white',  borderRadius:'10px'}} >
 
       <Search className={styles['search']}>
@@ -278,12 +278,12 @@ export default function PrimarySearchAppBar() {
            />
          </Search>
       </Toolbar> */}
-         
+
 
       </div>
-     
 
-     
+
+
 
     </Box>
   );

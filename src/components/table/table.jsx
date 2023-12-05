@@ -21,12 +21,10 @@ import Switch from '@mui/material/Switch';
 import DeleteIcon from '@mui/icons-material/Delete';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
-import SearchIcon from '@mui/icons-material/Search';
-import { InputBase } from '@mui/material';
-import styled from '@emotion/styled';
 import styles from './styles.module.css'
 import Search from '../search/search';
-import { Avatar } from '@mui/material';
+import Settings from '../settings/settings'
+
 
 
 function createData(id, name, calories, fat, carbs, protein) {
@@ -182,33 +180,6 @@ EnhancedTableHead.propTypes = {
 
 function EnhancedTableToolbar(props) {
     const { numSelected } = props;
-
-
-
-    const SearchIconWrapper = styled('div')(({ theme }) => ({
-        padding: theme.spacing(0, 2),
-        height: '100%',
-        position: 'absolute',
-        pointerEvents: 'none',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-    }));
-
-    const StyledInputBase = styled(InputBase)(({ theme }) => ({
-        color: 'inherit',
-        '& .MuiInputBase-input': {
-            padding: theme.spacing(1, 1, 1, 0),
-            // vertical padding + font size from searchIcon
-            paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-            transition: theme.transitions.create('width'),
-            width: '100%',
-            [theme.breakpoints.up('md')]: {
-                width: '20ch',
-            },
-        },
-    }));
-
     return (
         <Toolbar
             sx={{
@@ -356,7 +327,7 @@ export default function EnhancedTable() {
                                         selected={isItemSelected}
                                         sx={{ cursor: 'pointer' }}
                                     >
-                                        <TableCell sx={{position: 'relative'}} padding="checkbox">
+                                        <TableCell sx={{ position: 'relative' }} padding="checkbox">
                                             <Checkbox
                                                 color="primary"
                                                 checked={isItemSelected}
@@ -366,20 +337,20 @@ export default function EnhancedTable() {
                                             />
                                             <i
                                                 className={styles['avatar']}
-                                    
+
                                             ></i>
 
                                         </TableCell>
                                         <TableCell
-                                        
+
                                             component="th"
                                             id={labelId}
                                             scope="row"
                                             // padding="none"
-                                            sx={{paddingLeft:'30px'}}
+                                            sx={{ paddingLeft: '30px' }}
                                         >
                                             {row.name}
-                                            
+
                                         </TableCell>
                                         <TableCell align="right">{row.calories}</TableCell>
                                         <TableCell align="right">{row.fat}</TableCell>

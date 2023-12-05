@@ -47,7 +47,7 @@ const Search = () => {
             width: '100%',
             [theme.breakpoints.up('md')]: {
                 width: '15ch',
-                
+
             },
         },
     }));

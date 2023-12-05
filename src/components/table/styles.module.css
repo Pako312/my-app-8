@@ -4,14 +4,7 @@
     width: 50px;
     display: block;
 }
-/* .InputBox {
-    border: 1px solid grey;
-   width: 30%;
-}
-.InputBox input {
-    border: none;
-    padding: 10px;
-} */
+
 
 .avatar {
     position: absolute;
@@ -23,6 +16,6 @@
     background: url('https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-9.jpg') center center/contain no-repeat;
 }
 
-.tableItems{
-     margin-left: 100px;
+.tableItems {
+    margin-left: 100px;
 }
