@@ -17,30 +17,12 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { green, grey } from '@mui/material/colors';
 import { Avatar } from '@mui/material';
-import styles from './app.module.css';
+import styles from './app.module.scss';
 import Button from '@mui/material/Button';
 import EnhancedTable from './components/table/table';
 import Search from './components/search/search';
 
 
-
-// const Search = styled('div')(({ theme }) => ({
-//   position: 'relative',
-//   borderRadius: theme.shape.borderRadius,
-//   backgroundColor: alpha(theme.palette.common.white, 0.15),
-//   '&:hover': {
-//     backgroundColor: alpha(theme.palette.common.white, 0.25),
-//   },
-//   marginRight: theme.spacing(2),
-//   marginLeft: 0,
-//   width: '100%',
-//   [theme.breakpoints.up('sm')]: {
-//     marginLeft: theme.spacing(3),
-//     width: 'auto',
-//   },
-// }));
-
-// const color = grey[500];
 
 const SearchIconWrapper = styled('div')(({ theme }) => ({
   padding: theme.spacing(0, 2),
@@ -52,19 +34,6 @@ const SearchIconWrapper = styled('div')(({ theme }) => ({
   justifyContent: 'center',
 }));
 
-// const StyledInputBase = styled(InputBase)(({ theme }) => ({
-//   color: 'inherit',
-//   '& .MuiInputBase-input': {
-//     padding: theme.spacing(1, 1, 1, 0),
-//     // vertical padding + font size from searchIcon
-//     paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-//     transition: theme.transitions.create('width'),
-//     width: '100%',
-//     [theme.breakpoints.up('md')]: {
-//       width: '20ch',
-//     },
-//   },
-// }));
 
 export default function PrimarySearchAppBar() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -175,27 +144,13 @@ export default function PrimarySearchAppBar() {
             aria-label="open drawer"
             sx={{ mr: 2 }}
           >
-            {/* <MenuIcon /> */}
+
           </IconButton>
-          {/* <Typography
-            variant="h6"
-            noWrap
-            component="div"
-            sx={{ display: { xs: 'none', sm: 'block' } }}
-          >
-            MUI
-          </Typography> */}
+
           <SearchIconWrapper>
             <SearchIcon />
           </SearchIconWrapper>
 
-          {/* <Search>
-           
-            <StyledInputBase
-              placeholder="Search…"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search> */}
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             <IconButton size="large" aria-label="show 4 new mails" color="inherit">
@@ -205,7 +160,6 @@ export default function PrimarySearchAppBar() {
 
                 <i className={styles['icon']}></i>
 
-                {/* <MailIcon /> */}
               </Badge>
             </IconButton>
             <IconButton
@@ -232,8 +186,6 @@ export default function PrimarySearchAppBar() {
                 src="https://icon-library.com/images/anonymous-avatar-icon/anonymous-avatar-icon-9.jpg"
               />
 
-
-              {/* <AccountCircle /> */}
             </IconButton>
           </Box>
 
@@ -263,23 +215,6 @@ export default function PrimarySearchAppBar() {
         </div>
 
         <EnhancedTable />
-
-        {/* 
-      <Toolbar sx={{backgroundColor:'white',  borderRadius:'10px'}} >
-
-      <Search className={styles['search']}>
-      <SearchIconWrapper>
-            <SearchIcon sx={{color:'grey'}} />
-          </SearchIconWrapper>
-           <StyledInputBase
-             placeholder="Search…"
-             inputProps={{ 'aria-label': 'search' }}
-             
-           />
-         </Search>
-      </Toolbar> */}
-
-
       </div>
 
 

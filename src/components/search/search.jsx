@@ -7,7 +7,7 @@ import InputBase from '@mui/material/InputBase';
 
 import SearchIcon from '@mui/icons-material/Search';
 
-import styles from './style.module.css';
+import styles from './style.module.scss';
 
 const Search = () => {
 

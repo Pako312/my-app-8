@@ -21,7 +21,7 @@ import Switch from '@mui/material/Switch';
 import DeleteIcon from '@mui/icons-material/Delete';
 import FilterListIcon from '@mui/icons-material/FilterList';
 import { visuallyHidden } from '@mui/utils';
-import styles from './styles.module.css'
+import styles from './styles.module.scss'
 import Search from '../search/search';
 import Settings from '../settings/settings'
 
